@@ -3,37 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT24 - Event Driven Programming</title>
+    <title>Index</title>
 </head>
 <body>
-    <h1>Hello World</h1>
-
-    <input type="text"
-           id="textbox"
-           placeholder="Type something here..."
-           oninput="updateDisplay()">
+    <h1>Index</h1>
+    <h1><a href="basic-events.html">1. Basic Events</a></h1>
+    <h1><a href="todolist.html">2. To do list</a></h1>
+    <h1><a href="maps.html">3. Maps</a></h1>
     
-    <h1 id="displayText">Your text goes here</h1>
-    <h2 id="displayText2">Your text goes here</h2>
-
 </body>
-
-    <body>
-        <h3> Click here to see more</h3>
-        <a href="todolist.html"> yes here </a>
-    </body>
-<script>
-
-    function updateDisplay(){
-        var textbox = document.getElementById('textbox');
-        var displayText = document.getElementById('displayText');
-        var displayText2 = document.getElementById('displayText2');
-        const d = new Date();
-
-        displayText.textContent = textbox.value;
-        displayText2.textContent = textbox.value;
-        console.log(textbox.value + d + " "+window.location.hostname);
-    }
-
-</script>
 </html>
